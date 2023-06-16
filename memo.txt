@@ -1,0 +1,10 @@
+pullの仕方
+1.git clone 名前
+
+2.git feach 
+
+SampleComponent.tsx
+renderMarkersという新しい関数を追加しました。この関数では、locationsをループしてマーカーを作成し、Google Maps上に表示します。
+GoogleMapReactコンポーネントにyesIWantToUseGoogleMapApiInternalsとonGoogleApiLoadedのプロパティを追加しました。yesIWantToUseGoogleMapApiInternalsは、Google Maps APIの内部機能にアクセスするために必要です。onGoogleApiLoadedは、Google Maps APIがロードされたときに実行されるコールバック関数で、ここでrenderMarkers関数を呼び出してマーカーを作成します。
+修正後のコードでは、GoogleMapReactコンポーネントがマップを表示し、Google Maps APIがロードされるとonGoogleApiLoadedが実行され、renderMarkers関数が呼び出されてマーカーが作成されます。マーカーは指定した位置に表示されるはずです。
+
